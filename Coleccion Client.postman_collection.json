@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "c5c1a6a0-e58c-46ef-b0a6-22ecc49b0dcd",
+		"name": "Coleccion Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/clients",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Maria\",\n\t\"last_name\":\"Ramirez\",\n\t\"gender\":\"Femenino\",\n    \"birthdate\": \"2000-03-20\",\n    \"email\": \"maria@gmail.com\",\n    \"latitude\":\"4.63858\",\n    \"longitude\":\"-74.0841\",\n    \"address\": \"Kr36a#22-11\",\n    \"user\": \"Maria1\",\n    \"password\": \"prueba\",\n    \"city_id\": 2\n\n}"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/clients",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Client",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Maria\",\n\t\"last_name\":\"Ramirez\",\n\t\"gender\":\"Femenino\",\n    \"birthdate\": \"2000-03-20\",\n    \"email\": \"maria@gmail.com\",\n    \"latitude\":\"4.63858\",\n    \"longitude\":\"-74.0841\",\n    \"address\": \"Kr36a#22-11\",\n    \"user\": \"Maria1\",\n    \"password\": \"prueba\",\n    \"city_id\": 2\n\n}"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/clients/4",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"clients",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/clients/2",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"clients",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c077147b-156c-4718-9bc6-ead9ec5d299f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "763a8dfe-0138-4c16-bba9-1df3323f788d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

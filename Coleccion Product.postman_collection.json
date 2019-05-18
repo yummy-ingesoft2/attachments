@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8720b478-85d0-4ad7-97a2-977c46854720",
+		"name": "Coleccion Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks/3/products",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks",
+						"3",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"category\":\"vegetarian\",\n        \"name\": \"Spagetti milenario\",\n        \"description\": \"spagetti cocido\",\n        \"cost\": 1000,\n\t\t\"cook_id\": 3\n    }\n        "
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks/3/products/",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks",
+						"3",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Product",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"category\":\"vegetariana\",\n        \"name\": \"Ensaladas ----\",\n        \"description\": \"Muy rico\",\n        \"cost\": \"1000\",\n\t\t\"cook_id\": 3\n    }"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks/3/products/11",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks",
+						"3",
+						"products",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks/3/products/1",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks",
+						"3",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "17cdfc83-6700-43e3-bd4c-73c076b8ef15",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "eeb764e4-655d-4c4b-b20f-559b5ccb4958",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

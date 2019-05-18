@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "379e34e3-1a32-4160-b440-cbfd5c06cdf4",
+		"name": "Coleccion Driver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Driver",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/drivers",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"drivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Driver",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \t\"user\": \"Pedro\",\n        \"password\": \"pedro33\",\n        \"email\": \"ped@gmail.com\",\n        \"name\": \"pedro\",\n        \"last_name\": \"Perez\"\n    }"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/drivers",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"drivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Driver",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \t\"user\": \"Pedro\",\n        \"password\": \"pedro33\",\n        \"email\": \"ped@gmail.com\",\n        \"name\": \"Pedro \",\n        \"last_name\": \"Perez\"\n    }"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/drivers/1",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"drivers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Driver",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/drivers/2",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"drivers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

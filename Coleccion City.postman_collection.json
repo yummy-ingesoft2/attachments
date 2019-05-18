@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "573ee7ea-4806-45f7-8c48-d776001f544c",
+		"name": "Coleccion City",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET City",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST City",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Barranquilla\"\n }\n "
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH City",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Cali\"\n }"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/4",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE City",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/4",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "85cf7e9d-0d86-43cb-8b9f-3680e7d4b03a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7cddc59f-2c12-4b2c-91cd-f1131e2030eb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

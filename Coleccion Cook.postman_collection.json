@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "9ec641cd-bb4e-4062-9e94-8a3260908b74",
+		"name": "Coleccion Cook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Cook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"name\": \"Ana\",\n        \"last_name\":\"Lozada\",\n        \"gender\": \"Femenino\",\n        \"birthdate\": \"2000-12-1\",\n        \"email\": \"ana@gmail.com\",\n        \"tel\":\"12345\",\n        \"latitude\": \"4.63858\",\n        \"longitude\": \"-74.0841\",\n        \"address\": \"Kr23#12-52\",\n        \"user\": \"AnaL\",\n        \"password\": \"ana321\",\n        \"city_id\": 2\n    }"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Cook",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"name\": \"Ana\",\n        \"last_name\":\"Lozada\",\n        \"gender\": \"Femenino\",\n        \"birthdate\": \"2000-12-1\",\n        \"email\": \"ana@hotmail.com\",\n        \"latitude\": \"4.63858\",\n        \"longitude\": \"-74.0841\",\n        \"address\": \"Kr23#12-52\",\n        \"user\": \"Ana1\",\n        \"password\": \"ana123\",\n        \"city_id\": 2\n    }"
+				},
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks/3",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Cook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://back-ndpinerosp.c9users.io/cities/2/cooks/2",
+					"protocol": "https",
+					"host": [
+						"back-ndpinerosp",
+						"c9users",
+						"io"
+					],
+					"path": [
+						"cities",
+						"2",
+						"cooks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bb31f1b9-eeb6-4e11-915a-4590e951baca",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "25851fa0-3aaf-467f-893c-b259e9283dc8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
